@@ -28,7 +28,7 @@ class Gamefield():
 
             
             
-            for x, y, m, mk in zip(xs, ys, ms, mks):
+            for x, y, m, mk, c in zip(xs, ys, ms, mks, cs):
                 plt.xlim([self.__dims[0], self.__dims[1]])
                 plt.ylim([self.__dims[2], self.__dims[3]])
                 plt.plot(x, y, marker=mk, color=c)
